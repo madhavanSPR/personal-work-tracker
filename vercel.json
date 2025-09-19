@@ -1,7 +1,7 @@
 {
   "version": 2,
   "buildCommand": "cd frontend && npm install && ng build --configuration=production",
-  "outputDirectory": "frontend/dist/personal-work-tracker",
+  "outputDirectory": "frontend/dist/personal-work-tracker/browser",
   "routes": [
     {
       "src": "/(.*)",
