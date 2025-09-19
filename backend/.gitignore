@@ -1,0 +1,23 @@
+# PocketBase data directory (contains sensitive data)
+pb_data/logs/
+pb_data/storage/
+
+# Keep schema and initial data but ignore logs and user uploads
+!pb_data/data.db
+!pb_data/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
