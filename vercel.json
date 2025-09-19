@@ -1,21 +1,11 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "frontend/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "frontend/dist/personal-work-tracker"
-      }
-    }
-  ],
+  "buildCommand": "cd frontend && npm install && ng build --configuration=production",
+  "outputDirectory": "frontend/dist/personal-work-tracker",
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/frontend/dist/personal-work-tracker/index.html"
+      "dest": "/index.html"
     }
-  ],
-  "buildCommand": "cd frontend && ng build --configuration=production",
-  "outputDirectory": "frontend/dist/personal-work-tracker",
-  "framework": "angular"
+  ]
 }
